@@ -1,38 +1,60 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+body{
+  margin: 0px;
+  padding: 0px;
+  background-color: black;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+}
+.searchBox{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate( -50% , -50%);
+  background: #EADBC8;
+  height: 40px;
+  border-radius: 40px;
+  padding: 10px;
+
+
+}
+.search-btn{
+  color:  #74512D;
+  float: right;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #EADBC8;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  transition: 0.4s;
+}
+.form-control{
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0px;
+  color: black;
+  font-size: 16px;
+  transition: 0.4s;
+  line-height: 40px;
+  width: 0px;
+}
+.searchBox:hover > .form-control{
+  width: 240px;
+  padding: 0 6px;
+
 }
 
-.App-link {
-  color: #61dafb;
+.searchBox:hover > .search-btn{
+background-color: white;
+  
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.listName{
+  color: whitesmoke;
+}
+.listName:hover{
+  color: #F6FAB9;
 }
